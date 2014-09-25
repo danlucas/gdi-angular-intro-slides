@@ -24,12 +24,57 @@ Note: Mention modular design and a graphic would be helpful here
 
 ## Our first module
 
-Create a new file, app.js and add:
+Create a new file, app.js, and add:
+
 ```
 var app = angular.module('store', [ ]);
 ```
+
+And in our HTML file
+
+```html
+<!DOCTYPE HTML>
+<html ng-app="store">
+    <head>
+        <link rel="stylesheet" type="text/css" href="boostrap.min.css"></link>
+    </head>
+    <body>
+        <!--
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        -->
+    </body>
+</html>
+```
+
+There, you've made a module.
+
 Note:
 - Create your app.js file, add main app module code
 - angular is a call to angular.js
 - 'store' will be the name of your application
-- [] will be where dependencies go
+- [ ] will be where dependencies go
+
+
+
+## expressions
+
+Angular expressions are JavaScript-like code snippets that are usually placed in bindings such as {{ expression }}. <!-- .element: cite="https://docs.angularjs.org/guide/expression" -->
+This allows you to insert values into the HTML
+
+For example:
+
+```
+I have {{ 1+2 }} apples ⇨ I have 3 apples
+```
+
+
+## expressions
+Some other valid expressions:
+
+```
+{{ a+b }}
+{{ user.name }}
+{{ items[index] }}
+```
+Note: Show live example
