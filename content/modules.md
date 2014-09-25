@@ -54,27 +54,6 @@ Note:
 - angular is a call to angular.js
 - 'store' will be the name of your application
 - [ ] will be where dependencies go
-
-
-
-## expressions
-
-Angular expressions are JavaScript-like code snippets that are usually placed in bindings such as {{ expression }}. <!-- .element: cite="https://docs.angularjs.org/guide/expression" -->
-This allows you to insert values into the HTML
-
-For example:
-
-```
-I have {{ 1+2 }} apples ⇨ I have 3 apples
-```
-
-
-## expressions
-Some other valid expressions:
-
-```
-{{ a+b }}
-{{ user.name }}
-{{ items[index] }}
-```
-Note: Show live example
+- Side note about ng-app
+    - It's telling angular that everything inside of html belongs to the app 'store'
+    - It could even be empty
