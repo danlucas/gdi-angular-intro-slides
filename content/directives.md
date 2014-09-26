@@ -10,32 +10,17 @@
         <div>
             <p>{{collection.item.shortDescription}}</p>
         </div>
-    </div>
-</div>
-```
-
-Note: Let's say I want to expand my collection to hold movies that I don't own.
-
-
-## Adding functionality
-```
-<div ng-controller="CollectionController as collection">
-    <div>
-        <h2>
-            {{collection.item.name}}
-            <span>{{collection.item.release}}</span>
-        </h2>
-        <h3>International Gross: ${{collection.item.gross}}<h3>
-        <div>
-            <p>{{collection.item.shortDescription}}</p>
-        </div>
         <h3>(In your collection)</h3>
     </div>
 </div>
 ```
 
-Note: And wanted to add a little text to the view indicate that
+Note: Let's say I want to expand my collection to hold movies that I don't own. And wanted to add a little text to the view indicate that
 We could add a string to our object and have it display but... nah
+
+
+
+## Directives
 
 
 ## NgShow Directive
