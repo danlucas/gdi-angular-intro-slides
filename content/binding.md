@@ -36,3 +36,5 @@ Then add a binding somewhere on the page
 ```
 <h1>Hi, {{user.name}}</h1>
 ```
+Note: show manipulating classes
+Good time to take a break
