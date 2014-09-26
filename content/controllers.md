@@ -73,4 +73,4 @@ The "scope" of the controller only works inside of the container
 {{user.user.name}} <!-- doesnt't work! -->
 ```
 
-Note: Break time. Should we have exercises here?
+Note: Exercise time. Set up new collection to be used with the rest of the class.
