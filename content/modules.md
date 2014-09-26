@@ -27,14 +27,14 @@ Note: Mention modular design and a graphic would be helpful here
 Create a new file, app.js, and add:
 
 ```
-var app = angular.module('store', [ ]);
+var app = angular.module('collection', [ ]);
 ```
 
 And in our HTML file
 
 ```html
 <!DOCTYPE HTML>
-<html ng-app="store">
+<html ng-app="collection">
     <head>
         <link rel="stylesheet" type="text/css" href="boostrap.min.css"></link>
     </head>
@@ -47,7 +47,7 @@ And in our HTML file
 </html>
 ```
 
-There, you've made a module.
+You've made a module!
 
 Note:
 - Create your app.js file, add main app module code

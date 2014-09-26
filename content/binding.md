@@ -36,5 +36,17 @@ Then add a binding somewhere on the page
 ```
 <h1>Hi, {{user.name}}</h1>
 ```
-Note: show manipulating classes
-Good time to take a break
+
+
+## More binding
+Binding can be used for more than just printing text
+```
+<input type="text" ng-model="user.status" />
+```
+
+```
+<h2 class="text-{{user.status}}">Your current status: {{user.status}}</h2>
+```
+Note:
+Live example
+show manipulating classes with user.status

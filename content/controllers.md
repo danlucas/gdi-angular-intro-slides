@@ -17,9 +17,9 @@ var user = {
 First we need to add a controller to our app
 ```
 (function(){
-    var app = angular.module('store', [ ]);
+    var app = angular.module('collection', [ ]);
 
-    app.controller('UserController', function(){
+    app.controller('UserController', function($scope){
 
     });
 })();
@@ -31,10 +31,10 @@ First we need to add a controller to our app
 Then assign the data to a property
 ```
 (function(){
-    var app = angular.module('store', [ ]);
+    var app = angular.module('collection', [ ]);
 
-    app.controller('UserController', function(){
-        this.user = user;
+    app.controller('UserController', function($scope){
+        $scope.user = user;
     });
 
     var user = {
@@ -48,12 +48,12 @@ Then assign the data to a property
 
 ## Attaching the Controller
 ```
-<div class="container" ng-controller="UserController as user">
-    <h1>Hi, {{user.user.name}}.</h1>
-    <h2 class="text-{{user.user.status}}">Your current status: {{user.user.status}}</h2>
+<div class="container" ng-controller="UserController">
+    <h1>Hi, {{user.name}}.</h1>
+    <h2 class="text-{{user.status}}">Your current status: {{user.status}}</h2>
 
-    <!-- <input type="text" ng-model="store.user.name" /> -->
-    <!-- <input type="text" ng-model="store.user.status" /> -->
+    <!-- <input type="text" ng-model="user.name" /> -->
+    <!-- <input type="text" ng-model="user.status" /> -->
 </div>
 ```
 
@@ -63,14 +63,14 @@ Then assign the data to a property
 The "scope" of the controller only works inside of the container
 
 ```
-<div class="container" ng-controller="UserController as user">
-    <h1>Hi, {{user.user.name}}.</h1>
-    <h2 class="text-{{user.user.status}}">Your current status: {{user.user.status}}</h2>
+<div class="container" ng-controller="UserController">
+    <h1>Hi, {{user.name}}.</h1>
+    <h2 class="text-{{user.status}}">Your current status: {{user.status}}</h2>
 
-    <!-- <input type="text" ng-model="store.user.name" /> -->
-    <!-- <input type="text" ng-model="store.user.status" /> -->
+    <!-- <input type="text" ng-model="user.name" /> -->
+    <!-- <input type="text" ng-model="user.status" /> -->
 </div>
-{{user.user.name}} <!-- doesnt't work! -->
+{{user.name}} <!-- doesnt't work! -->
 ```
 
 Note: Exercise time. Set up new collection to be used with the rest of the class.

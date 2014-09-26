@@ -98,8 +98,3 @@ var movie = {
 
 Note: When you want to hide someting when a condition is true
 IE. You want to hide your guilty pleasure films
-
-
-
-Only show when you actually own it... <!-- .element: class="fragment" -->
-note: Enable user to show and hide a longer description
