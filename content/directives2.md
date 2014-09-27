@@ -99,3 +99,70 @@ Set the active tab
 ```
 Note:
 Sets a dynamic class based on a value
+
+
+
+### This is starting to look a little ugly...
+```
+<section ng-init="tab=1">
+    <ul class='nav nav-tabs'>
+        <li ng-class="{active:tab === 1}"><a href ng-click="tab = 1">Description</a></li>
+        <li ng-class="{active:tab === 2}"><a href ng-click="tab = 2">Cast</a></li>
+    </ul>
+
+    <div class="panel" ng-show="tab === 1">
+        <h4>Description</h4>
+        <blockquote>{{item.longDescription}}</blockquote>
+    </div>
+    <div class="panel" ng-show="tab === 2">
+        <h4>Cast</h4>
+        <table class='table'>
+            <tr ng-repeat="member in item.cast">
+                <td>{{member.name}}</td>
+                <td>{{member.character}}</td>
+            </tr>
+        </table>
+    </div>
+</section>
+```
+
+
+### Move the logic into the controller
+```
+<section ng-controller="PanelController as panel">
+    <ul class='nav nav-tabs'>
+        <li ng-class="{active:panel.isTabSelected(1)}"><a href ng-click="panel.selectTab(1)">Description</a></li>
+        <li ng-class="{active:panel.isTabSelected(2)}"><a href ng-click="panel.selectTab(2)">Cast</a></li>
+    </ul>
+
+    <div class="panel" ng-show="panel.isTabSelected(1)">
+        <h4>Description</h4>
+        <blockquote>{{item.longDescription}}</blockquote>
+    </div>
+    <div class="panel" ng-show="panel.isTabSelected(2)">
+        <h4>Cast</h4>
+        <table class='table'>
+            <tr ng-repeat="member in item.cast">
+                <td>{{member.name}}</td>
+                <td>{{member.character}}</td>
+            </tr>
+        </table>
+    </div>
+</section>
+```
+
+
+### Move the logic into the controller
+```
+app.controller('PanelController', function(){
+    this.tab = 1;
+
+    this.selectTab = function(setTab){
+        this.tab = setTab;
+    };
+
+    this.isTabSelected = function(checkTab){
+        return this.tab === checkTab;
+    };
+});
+```
