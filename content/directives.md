@@ -14,16 +14,14 @@
     </div>
 </div>
 ```
+Expand our list to hold thing I plan to collect.
+Show a little message indicating when it's in the collection
 
 Note: Let's say I want to expand my collection to hold movies that I don't own. And wanted to add a little text to the view indicate that
 We could add a string to our object and have it display but... nah
 
 
-
-## Directives
-
-
-## NgShow Directive
+## Adding Functionality: ngshow directive
 ```
 var movie = {
     name: "Marvel's The Avengers",
@@ -52,7 +50,7 @@ var movie = {
 <!-- .element: class="fragment" -->
 
 
-## NgHide Directive
+## Adding Functionality: NgHide Directive
 ```
 var movie = {
     name: "Marvel's The Avengers",
@@ -86,7 +84,7 @@ IE. You want to hide your guilty pleasure films
 
 
 
-## NgRepeat
+## More Data
 ```
 var movie = {
     name: "Marvel's The Avengers",
@@ -98,7 +96,7 @@ var movie = {
 ```
 
 
-## NgRepeat
+## More Data
 ```
 var movies = [
     {
@@ -123,22 +121,6 @@ var movies = [
 app.controller('CollectionController', function(){
     this.items = movies;
 });
-```
-
-
-## NgRepeat
-```
-<div>
-    <h2>
-        {{collection.item.name}}
-        <span class="small">{{collection.item.release | date:'mediumDate'}}</span>
-    </h2>
-    <h3>International Gross: {{collection.item.gross * 1000000 | currency:'$'}}<h3>
-    <div>
-        <p>{{collection.item.shortDescription}}</p>
-    </div>
-    <h3 ng-show="{{collection.item.inCollection}}">(In your collection)</h3>
-</div>
 ```
 
 Note: Show bad way: collection.item[0].name, etc.
