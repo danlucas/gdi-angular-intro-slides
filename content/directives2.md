@@ -127,7 +127,7 @@ Sets a dynamic class based on a value
 ```
 
 
-### Move the logic into the controller
+### Move the logic into a controller
 ```
 <section ng-controller="PanelController as panel">
     <ul class='nav nav-tabs'>
@@ -152,7 +152,7 @@ Sets a dynamic class based on a value
 ```
 
 
-### Move the logic into the controller
+### Move the logic into a controller
 ```
 app.controller('PanelController', function(){
     this.tab = 1;
