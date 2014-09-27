@@ -1,5 +1,5 @@
 ## Filters
-Let's clean up that date
+Let's clean up that [date](https://docs.angularjs.org/api/ng/filter/date)
 ```
 <div ng-controller="CollectionController as collection">
     <div>
@@ -16,7 +16,6 @@ Let's clean up that date
 ```
 
 Note:
-- Show issue with date
 - Well that's all nice but what's with that date, tho?
 sample custom filter
 myApp.filter('reverse', function () {

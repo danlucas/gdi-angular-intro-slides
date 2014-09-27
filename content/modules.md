@@ -52,8 +52,8 @@ You've made a module!
 Note:
 - Create your app.js file, add main app module code
 - angular is a call to angular.js
-- 'store' will be the name of your application
+- 'collection' will be the name of your application, make sure to add it!
 - [ ] will be where dependencies go
 - Side note about ng-app
-    - It's telling angular that everything inside of html belongs to the app 'store'
+    - It's telling angular that everything inside of html belongs to the app 'collection'
     - It could even be empty
