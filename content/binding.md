@@ -19,11 +19,9 @@ Some other valid expressions:
 {{ items[index] }}
 ```
 Note:
-- Show live example
 - no loops, conditionals, if/else
-- Where do those variables come from? (lead into controllers)
 - You don't really want to do logic in your view!
-- Binding is best for displaying data and showing off
+- Binding is best for displaying data
 
 
 
@@ -48,8 +46,3 @@ Binding can be used for more than just printing text
 ```
 <h2 class="text-{{user.status}}">Your current status: {{user.status}}</h2>
 ```
-Note:
-Live example
-show manipulating classes with user.status
-take a momement to make sure everyone has gotten this far
-break if it's been a while

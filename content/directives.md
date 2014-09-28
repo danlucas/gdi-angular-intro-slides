@@ -18,7 +18,6 @@ Expand our list to hold thing I plan to collect.
 Show a little message indicating when it's in the collection
 
 Note: Let's say I want to expand my collection to hold movies that I don't own. And wanted to add a little text to the view indicate that
-We could add a string to our object and have it display but... nah
 
 
 ## Adding Functionality: ngshow directive
@@ -79,7 +78,7 @@ var movie = {
 ```
 <!-- .element: class="fragment" -->
 
-Note: When you want to hide someting when a condition is true
+Note: When you want to hide something when a condition is true
 IE. You want to hide your guilty pleasure films
 
 
@@ -123,7 +122,7 @@ app.controller('CollectionController', function(){
 });
 ```
 
-Note: Show bad way: collection.item[0].name, etc.
+Note: Bad way: collection.item[0].name, etc.
 
 
 ## NgRepeat

@@ -72,5 +72,3 @@ The "scope" of the controller only works inside of the container
 </div>
 {{user.name}} <!-- doesnt't work! -->
 ```
-
-Note: Exercise time. Set up new collection to be used with the rest of the class.

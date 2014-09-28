@@ -15,4 +15,3 @@ Download Bootstrap (or your favorite css library)
 
 Note:
 - adding the script tag and style tags
-- pause to make sure everyone is set up
