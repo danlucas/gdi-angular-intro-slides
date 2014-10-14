@@ -1,5 +1,7 @@
 # Girl Develop It RDU: Intro to AngularJS (Slides!)
 
+[View the slides!](http://danlucas.github.io/gdi-angular-intro-slides/#/)
+
 These are the slides for the [Intro to Angular workshop](https://github.com/danlucas/gdi-angular-intro).
 
 The slide contents can be found inside of the [content](content) directory in markdown files.
